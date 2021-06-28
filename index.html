@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Это баг</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <main class="container">
+      <div class="slide slide_menu active">
+        <h1 class="title">
+          Выберите уровень сложности:
+        </h1>
+        <p class="subtitle">
+          Выберите сложность и игра начнется. Чем выше уровень - тем больше будет выборка карт.
+        </p>
+        <div class="content">
+          <div class="list-level">
+            <input id="easy" type="radio" value="easy" name="level-item" class="list-level__radio">
+
+            <label for="easy" class="list-level__item">
+              <span class="rectangle"></span>
+              Простой
+            </label>
+            <input id="middle" type="radio" value="middle" name="level-item" class="list-level__radio">
+            <label for="middle" class="list-level__item">
+              <div class="rectangle"></div>
+              Средний
+            </label>
+            <input id="hard" type="radio" value="hard" name="level-item" class="list-level__radio">
+            <label for="hard" class="list-level__item">
+              <div class="rectangle"></div>
+              Сложный
+            </label>
+          </div>
+          <button class="start-btn">
+            Начать игру
+          </button>
+          <img class="menu-card menu-card_one" src="img/card-face.svg" alt="card">
+          <img class="menu-card menu-card_two" src="img/card-face.svg" alt="card">
+        </div>
+      </div>
+      <div class="slide slide_easy">
+        <div class="flip-card">
+          <div class="flip-card__face"></div>
+          <div class="flip-card__back"></div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card__face"></div>
+          <div class="flip-card__back"></div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card__face"></div>
+          <div class="flip-card__back"></div>
+        </div>
+      </div>
+      <div class="slide slide_middle">
+        <div class="flip-card">
+          <div class="flip-card__face"></div>
+          <div class="flip-card__back"></div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card__face"></div>
+          <div class="flip-card__back"></div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card__face"></div>
+          <div class="flip-card__back"></div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card__face"></div>
+          <div class="flip-card__back"></div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card__face"></div>
+          <div class="flip-card__back"></div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card__face"></div>
+          <div class="flip-card__back"></div>
+        </div>
+      </div>
+      <div class="slide slide_hard">
+        <div class="flip-card">
+          <div class="flip-card__face"></div>
+          <div class="flip-card__back"></div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card__face"></div>
+          <div class="flip-card__back"></div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card__face"></div>
+          <div class="flip-card__back"></div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card__face"></div>
+          <div class="flip-card__back"></div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card__face"></div>
+          <div class="flip-card__back"></div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card__face"></div>
+          <div class="flip-card__back"></div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card__face"></div>
+          <div class="flip-card__back"></div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card__face"></div>
+          <div class="flip-card__back"></div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card__face"></div>
+          <div class="flip-card__back"></div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card__face"></div>
+          <div class="flip-card__back"></div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+
+</html>
