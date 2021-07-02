@@ -165,7 +165,6 @@ body {
 .flip-card:hover {
   box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
   transform: translateY(-30px) rotateZ(-2deg);
-  ;
 }
 
 .flip-card.flip {
@@ -240,7 +239,7 @@ body {
 
 @media (max-width: 1110px) {
   .menu-card_one {
-    left: 49%
+    left: 49%;
   }
 
   .menu-card_two {
@@ -262,9 +261,9 @@ body {
   }
 }
 
-@media(max-width: 930px) {
+@media (max-width: 930px) {
   .menu-card_one {
-    left: 45%
+    left: 45%;
   }
 
   .menu-card_two {
@@ -375,7 +374,7 @@ body {
 
 }
 
-@media(max-width: 400px) {
+@media (max-width: 400px) {
   .flip-card {
     width: 88px;
     height: 191px;
@@ -383,15 +382,12 @@ body {
 
   .slide_hard {
     width: 90%;
+    margin-bottom: 10px;
   }
 
   .slide_hard .flip-card {
     width: 58px;
     height: 161px;
-  }
-
-  .flip-card {
-    margin-bottom: 10px;
   }
 }
 
