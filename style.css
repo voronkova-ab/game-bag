@@ -4,14 +4,10 @@ body, h1, p, ul, li {
 }
 
 body {
-  background: url(../img/background.jpg) no-repeat center center;
-  height: 1024px;
+  background: url(img/background.jpg) no-repeat center center;
+  overflow: hidden;
+  height: 2000px;
   background-size: cover;
-}
-
-.container {
-  height: 100%;
-  position: relative;
 }
 
 .slide {
@@ -21,6 +17,7 @@ body {
   opacity: 0;
   transition: opacity .8s;
   z-index: 0;
+  flex-wrap: wrap;
 }
 
 .none {
@@ -33,9 +30,11 @@ body {
 }
 
 .slide_menu {
-  padding: 133px 104px;
+  top: 8%;
+  left: 6%;
+  width: 93%;
+  margin: 0;
   flex-direction: column;
-  position: relative;
 }
 
 .title {
@@ -48,6 +47,10 @@ body {
   color: #fff;
   font: 400 19px/22px "Roboto", sans-serif;
   margin-bottom: 60px;
+}
+
+.content {
+  position: relative;
 }
 
 .list-level {
@@ -78,7 +81,7 @@ body {
 
 .rectangle {
   content: '';
-  background-image: url(../img/rectangle.svg);
+  background-image: url(img/rectangle.svg);
   width: 25px;
   height: 25px;
   position: absolute;
@@ -90,7 +93,7 @@ body {
 
 .list-level__item:hover::before {
   content: '';
-  background-image: url(../img/rectangle.svg);
+  background-image: url(img/rectangle.svg);
   width: 25px;
   height: 25px;
   position: absolute;
@@ -116,52 +119,56 @@ body {
 
 .menu-card_one {
   position: absolute;
-  left: 48%;
-  top: 62%;
+  left: 56%;
+  top: 60%;
   transform: rotate(12deg);
 }
 
 .menu-card_two {
   position: absolute;
-  left: 58%;
-  top: 64%;
+  left: 68%;
+  top: 62%;
   transform: rotate(39deg);
 }
 
 .slide_easy {
-  top: 33%;
-  left: 26%;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 49%;
 }
 
 .slide_middle {
-  top: 15%;
-  left: 25%;
-  flex-wrap: wrap;
-  width: 49%;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48%;
 }
 
 .slide_hard {
-  top: 15%;
-  left: 9%;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 82%;
-  flex-wrap: wrap;
 }
 
 .flip-card {
   position: relative;
-  width: 218px;
+  width: 28%;
   height: 341px;
   margin-bottom: 24px;
   transform-style: preserve-3d;
-  transition: transform .5s;
-  background-image: url(../img/card-face.svg);
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  transition: transform .4s;
   border-radius: 10px;
 }
 
+.slide_hard .flip-card {
+  width: 17%;
+}
+
 .flip-card:hover {
-  transform: rotate(-3.08deg);
+  box-shadow: 15px 15px 15px rgba(0,0,0,0.5);
+  transform: translateY(-30px) rotateZ(-2deg);;
 }
 
 .flip-card.flip {
@@ -178,6 +185,132 @@ body {
 }
 
 .flip-card__back {
-   background-image: url(../img/card-back.svg);
    transform: rotateY(180deg);
+}
+
+@media (max-height: 950px) {
+  .menu-card_one {
+    top: 23%;
+  }
+
+  .menu-card_two {
+    top: 30%;
+  }
+}
+
+@media (max-height: 770px) {
+  .flip-card {
+    height: 282px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .menu-card_one {
+    left: 55%
+  }
+
+  .menu-card_two {
+    left: 67%;
+  }
+
+  .slide_hard {
+    width: 77%;
+  }
+}
+
+@media (max-width: 1485px) {
+  .menu-card_one {
+    left: 56%;
+  }
+
+  .menu-card_two {
+    left: 71%;
+  }
+
+  .slide_easy {
+    width: 66%;
+  }
+
+  .slide_middle {
+    width: 58%;
+  }
+
+  .slide_hard {
+    width: 90%;
+  }
+}
+
+@media (max-width: 670px) {
+  .subtitle {
+    margin-bottom: 6%;
+  }
+
+  .menu-card_one,
+  .menu-card_two {
+    display: none;
+  }
+
+  .flip-card {
+    height: 235px;
+  }
+
+  .list-level {
+    margin-bottom: 5%;
+  }
+}
+
+@media (max-width: 500px) {
+  .slide_menu {
+    top: 5%;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  .list-level {
+    margin-bottom: 6%;
+  }
+
+  .list-level__item {
+    font-size: 46px;
+  }
+
+  .start-btn {
+    padding: 29px 63px;
+    font-size: 27px;
+  }
+
+  .flip-card {
+    height: 157px;
+  }
+}
+
+@media (max-width: 360px) {
+  .title {
+    font-size: 36px;
+    line-height: 37px;
+  }
+
+  .subtitle {
+    font-size: 10px;
+    width: 90%;
+  }
+
+  .list-level {
+    margin-bottom: 6%;
+  }
+
+  .list-level__item {
+    font-size: 39px;
+    margin-bottom: 9px;
+  }
+
+  .start-btn {
+    padding: 29px 38px;
+  }
 }
