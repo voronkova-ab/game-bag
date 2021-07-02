@@ -1,8 +1,8 @@
-const slideMenu = document.querySelector('.slide_menu');
+const slideMenu = document.querySelector('.slide-menu');
 const slide = document.querySelectorAll('.slide')[1];
 const container = document.querySelector('.container');
 const btnStart = document.querySelector('.start-btn');
-const rectangleAll = document.querySelectorAll('.rectangle');
+const rectangleAll = document.querySelectorAll('.list-level__rectangle');
 const radio = document.querySelectorAll('.list-level__radio');
 let cards;
 
