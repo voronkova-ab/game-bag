@@ -30,8 +30,8 @@ body {
 }
 
 .slide-menu {
-  top: 8%;
-  left: 6%;
+  top: 13%;
+  left: 7%;
   width: 93%;
   margin: 0;
   flex-direction: column;
@@ -40,7 +40,7 @@ body {
 .slide-menu__title {
   color: #fff;
   font: 700 57px/67px "Roboto", sans-serif;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 .slide-menu__subtitle {
@@ -56,7 +56,7 @@ body {
 .list-level {
   display: flex;
   flex-direction: column;
-  margin-bottom: 88px;
+  margin-bottom: 91px;
   width: 30%;
 }
 
@@ -120,7 +120,7 @@ body {
 
 .menu-card_one {
   position: absolute;
-  left: 58%;
+  left: 59%;
   top: 56%;
   transform: rotate(12deg);
 }
@@ -128,7 +128,7 @@ body {
 .menu-card_two {
   position: absolute;
   left: 72%;
-  top: 62%;
+  top: 60%;
   transform: rotate(39deg);
 }
 
@@ -240,6 +240,14 @@ body {
     width: 178px;
     height: 279px;
   }
+
+  .menu-card_one {
+    left: 53%;
+  }
+
+  .menu-card_two {
+    left: 68%;
+  }
 }
 
 @media (max-width: 1141px) {
@@ -250,11 +258,11 @@ body {
 
 @media (max-width: 1110px) {
   .menu-card_one {
-    left: 49%;
+    left: 47%;
   }
 
   .menu-card_two {
-    left: 66%;
+    left: 65%;
   }
 
   .slide_easy,
@@ -268,7 +276,7 @@ body {
   }
 }
 
-@media (max-width: 930px) {
+@media (max-width: 935px) {
   .menu-card_one {
     left: 45%;
   }
