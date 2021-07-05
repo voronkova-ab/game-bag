@@ -106,16 +106,16 @@ body {
   color: #fff;
   font: 700 32px "Roboto", sans-serif;
   padding: 29px 85px;
-  background: #D62B2E;
+  background: #d62b2e;
   border: none;
   border-radius: 7px;
   transition: all .5s ease;
 }
 
 .start-btn:hover {
-  color: #D62B2E;
+  color: #d62b2e;
   background-color: #fff;
-  box-shadow: inset 0 0 0 4px #D62B2E;
+  box-shadow: inset 0 0 0 4px #d62b2e;
 }
 
 .menu-card_one {
