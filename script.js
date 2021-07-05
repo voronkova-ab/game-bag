@@ -13,25 +13,9 @@ function assignHendlerRadio() {
 assignHendlerRadio();
 
 function showRectangle(event) {
+  rectangleAll.forEach(item => item.style.opacity = '0');
   const rectangleActive = event.target.nextElementSibling.firstElementChild;
   rectangleActive.style.opacity = '1';
-
-  switch (event.target.value) {
-    case 'easy':
-      rectangleAll[1].style.opacity = '0';
-      rectangleAll[2].style.opacity = '0';
-      break;
-    case 'middle':
-      rectangleAll[0].style.opacity = '0';
-      rectangleAll[2].style.opacity = '0';
-      break;
-    case 'hard':
-      rectangleAll[0].style.opacity = '0';
-      rectangleAll[1].style.opacity = '0';
-      break;
-    default:
-      console.log('Ошибка');
-  }
 }
 
 btnStart.addEventListener('click', () => {

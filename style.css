@@ -108,6 +108,7 @@ body {
   padding: 29px 85px;
   background: #D62B2E;
   border: none;
+  border-radius: 7px;
   transition: all .5s ease;
 }
 
@@ -208,7 +209,7 @@ body {
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1593px) {
   .menu-card_one {
     left: 55%
   }
@@ -231,9 +232,19 @@ body {
     width: 64%;
   }
 
+  .slide_hard {
+    width: 78%;
+  }
+
   .slide_hard .flip-card {
     width: 178px;
-    height: 301px;
+    height: 279px;
+  }
+}
+
+@media (max-width: 1141px) {
+  .slide_hard {
+    width: 85%;
   }
 }
 
@@ -251,13 +262,9 @@ body {
     width: 77%;
   }
 
-  .slide_hard {
-    width: 84%;
-  }
-
   .slide_hard .flip-card {
     width: 158px;
-    height: 261px;
+    height: 248px;
   }
 }
 
@@ -281,12 +288,11 @@ body {
 
   .slide_hard .flip-card {
     width: 138px;
-    height: 241px;
+    height: 217px;
   }
 }
 
 @media (max-width: 870px) {
-
   .menu-card_one,
   .menu-card_two {
     display: none;
@@ -296,12 +302,16 @@ body {
 @media (max-width: 815px) {
   .flip-card {
     width: 178px;
-    height: 301px;
+    height: 277px;
   }
 
   .slide_hard .flip-card {
     width: 108px;
-    height: 211px;
+    height: 170px;
+  }
+
+  .slide_hard {
+    width: 80%;
   }
 }
 
@@ -320,19 +330,19 @@ body {
 
   .flip-card {
     width: 168px;
-    height: 271px;
+    height: 262px;
   }
 }
 
 @media (max-width: 600px) {
   .flip-card {
     width: 138px;
-    height: 241px;
+    height: 215px;
   }
 
   .slide_hard .flip-card {
     width: 88px;
-    height: 191px;
+    height: 138px;
   }
 }
 
@@ -342,7 +352,8 @@ body {
   }
 
   .slide-menu__title {
-    font-size: 50px;
+    line-height: 52px;
+    font-size: 47px;
   }
 
   .slide-menu__subtitle {
@@ -354,29 +365,30 @@ body {
   }
 
   .list-level__item {
-    font-size: 46px;
+    font-size: 40px;
+    margin-bottom: 8px;
   }
 
   .start-btn {
-    padding: 29px 63px;
-    font-size: 27px;
+    padding: 20px 57px;
+    font-size: 20px;
   }
 
   .flip-card {
     width: 108px;
-    height: 211px;
+    height: 168px;
   }
 
   .slide_hard .flip-card {
     width: 68px;
-    height: 171px;
+    height: 107px;
   }
 }
 
 @media (max-width: 400px) {
   .flip-card {
     width: 88px;
-    height: 191px;
+    height: 137px;
   }
 
   .slide_hard {
@@ -386,14 +398,14 @@ body {
 
   .slide_hard .flip-card {
     width: 58px;
-    height: 161px;
+    height: 91px;
   }
 }
 
 @media (max-width: 360px) {
   .slide-menu__title {
-    font-size: 36px;
-    line-height: 37px;
+    font-size: 38px;
+    line-height: 41px;
   }
 
   .slide-menu__subtitle {
@@ -406,17 +418,12 @@ body {
   }
 
   .list-level__item {
-    font-size: 39px;
-    margin-bottom: 9px;
-  }
-
-  .start-btn {
-    padding: 29px 38px;
+    font-size: 36px;
   }
 
   .flip-card {
     width: 78px;
-    height: 181px;
+    height: 121px;
   }
 }
 
@@ -427,6 +434,6 @@ body {
 
   .slide_hard .flip-card {
     width: 44px;
-    height: 147px;
+    height: 69px;
   }
 }
