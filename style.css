@@ -1,4 +1,8 @@
-body, h1, p, ul, li {
+body,
+h1,
+p,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
@@ -20,43 +24,39 @@ body {
   flex-wrap: wrap;
 }
 
-.none {
-  display: none;
-}
-
 .active {
   opacity: 1;
   z-index: 1;
 }
 
-.slide_menu {
-  top: 8%;
-  left: 6%;
+.slide-menu {
+  top: 13%;
+  left: 7%;
   width: 93%;
   margin: 0;
   flex-direction: column;
 }
 
-.title {
+.slide-menu__title {
   color: #fff;
   font: 700 57px/67px "Roboto", sans-serif;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
-.subtitle {
+.slide-menu__subtitle {
   color: #fff;
   font: 400 19px/22px "Roboto", sans-serif;
   margin-bottom: 60px;
 }
 
-.content {
+.slide-menu__content {
   position: relative;
 }
 
 .list-level {
   display: flex;
   flex-direction: column;
-  margin-bottom: 88px;
+  margin-bottom: 91px;
   width: 30%;
 }
 
@@ -79,7 +79,7 @@ body {
   position: absolute;
 }
 
-.rectangle {
+.list-level__rectangle {
   content: '';
   background-image: url(img/rectangle.svg);
   width: 25px;
@@ -103,31 +103,32 @@ body {
 }
 
 .start-btn {
-   color: #fff;
-   font: 700 32px "Roboto", sans-serif;
-   padding: 29px 85px;
-   background: #D62B2E;
-   border: none;
-   transition: all .5s ease;
+  color: #fff;
+  font: 700 32px "Roboto", sans-serif;
+  padding: 29px 85px;
+  background: #d62b2e;
+  border: none;
+  border-radius: 7px;
+  transition: all .5s ease;
 }
 
 .start-btn:hover {
-  color: #D62B2E;
+  color: #d62b2e;
   background-color: #fff;
-  box-shadow: inset 0 0 0 4px #D62B2E;
+  box-shadow: inset 0 0 0 4px #d62b2e;
 }
 
 .menu-card_one {
   position: absolute;
-  left: 56%;
-  top: 60%;
+  left: 59%;
+  top: 56%;
   transform: rotate(12deg);
 }
 
 .menu-card_two {
   position: absolute;
-  left: 68%;
-  top: 62%;
+  left: 72%;
+  top: 60%;
   transform: rotate(39deg);
 }
 
@@ -142,7 +143,7 @@ body {
   top: 51%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 48%;
+  width: 49%;
 }
 
 .slide_hard {
@@ -154,7 +155,7 @@ body {
 
 .flip-card {
   position: relative;
-  width: 28%;
+  width: 218px;
   height: 341px;
   margin-bottom: 24px;
   transform-style: preserve-3d;
@@ -162,13 +163,9 @@ body {
   border-radius: 10px;
 }
 
-.slide_hard .flip-card {
-  width: 17%;
-}
-
 .flip-card:hover {
-  box-shadow: 15px 15px 15px rgba(0,0,0,0.5);
-  transform: translateY(-30px) rotateZ(-2deg);;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+  transform: translateY(-30px) rotateZ(-2deg);
 }
 
 .flip-card.flip {
@@ -185,7 +182,7 @@ body {
 }
 
 .flip-card__back {
-   transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 @media (max-height: 950px) {
@@ -194,17 +191,25 @@ body {
   }
 
   .menu-card_two {
-    top: 30%;
+    top: 28%;
   }
 }
 
-@media (max-height: 770px) {
-  .flip-card {
-    height: 282px;
+@media (max-height: 794px) {
+  .list-level {
+    margin-bottom: 5%;
+  }
+
+  .menu-card_one {
+    top: 2%;
+  }
+
+  .menu-card_two {
+    top: 12%;
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1593px) {
   .menu-card_one {
     left: 55%
   }
@@ -218,57 +223,148 @@ body {
   }
 }
 
-@media (max-width: 1485px) {
-  .menu-card_one {
-    left: 56%;
-  }
-
-  .menu-card_two {
-    left: 71%;
-  }
-
+@media (max-width: 1355px) {
   .slide_easy {
     width: 66%;
   }
 
   .slide_middle {
-    width: 58%;
+    width: 64%;
   }
 
   .slide_hard {
-    width: 90%;
+    width: 78%;
+  }
+
+  .slide_hard .flip-card {
+    width: 178px;
+    height: 279px;
+  }
+
+  .menu-card_one {
+    left: 53%;
+  }
+
+  .menu-card_two {
+    left: 68%;
   }
 }
 
-@media (max-width: 670px) {
-  .subtitle {
-    margin-bottom: 6%;
+@media (max-width: 1141px) {
+  .slide_hard {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1110px) {
+  .menu-card_one {
+    left: 47%;
   }
 
+  .menu-card_two {
+    left: 65%;
+  }
+
+  .slide_easy,
+  .slide_middle {
+    width: 77%;
+  }
+
+  .slide_hard .flip-card {
+    width: 158px;
+    height: 248px;
+  }
+}
+
+@media (max-width: 935px) {
+  .menu-card_one {
+    left: 45%;
+  }
+
+  .menu-card_two {
+    left: 64%;
+  }
+
+  .start-btn {
+    padding: 29px 70px;
+  }
+
+  .slide_easy,
+  .slide_middle {
+    width: 86%;
+  }
+
+  .slide_hard .flip-card {
+    width: 138px;
+    height: 217px;
+  }
+}
+
+@media (max-width: 870px) {
   .menu-card_one,
   .menu-card_two {
     display: none;
   }
+}
 
+@media (max-width: 815px) {
   .flip-card {
-    height: 235px;
+    width: 178px;
+    height: 277px;
+  }
+
+  .slide_hard .flip-card {
+    width: 108px;
+    height: 170px;
+  }
+
+  .slide_hard {
+    width: 80%;
+  }
+}
+
+@media (max-width: 670px) {
+  .slide-menu__subtitle {
+    margin-bottom: 6%;
   }
 
   .list-level {
     margin-bottom: 5%;
   }
+
+  .slide_hard {
+    width: 94%;
+  }
+
+  .flip-card {
+    width: 168px;
+    height: 262px;
+  }
+}
+
+@media (max-width: 600px) {
+  .flip-card {
+    width: 138px;
+    height: 215px;
+  }
+
+  .slide_hard .flip-card {
+    width: 88px;
+    height: 138px;
+  }
 }
 
 @media (max-width: 500px) {
-  .slide_menu {
+  .slide-menu {
     top: 5%;
   }
 
-  .title {
-    font-size: 50px;
+  .slide-menu__title {
+    line-height: 52px;
+    font-size: 47px;
   }
 
-  .subtitle {
+  .slide-menu__subtitle {
     font-size: 15px;
   }
 
@@ -277,26 +373,50 @@ body {
   }
 
   .list-level__item {
-    font-size: 46px;
+    font-size: 40px;
+    margin-bottom: 8px;
   }
 
   .start-btn {
-    padding: 29px 63px;
-    font-size: 27px;
+    padding: 20px 57px;
+    font-size: 20px;
   }
 
   .flip-card {
-    height: 157px;
+    width: 108px;
+    height: 168px;
+  }
+
+  .slide_hard .flip-card {
+    width: 68px;
+    height: 107px;
+  }
+}
+
+@media (max-width: 400px) {
+  .flip-card {
+    width: 88px;
+    height: 137px;
+  }
+
+  .slide_hard {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .slide_hard .flip-card {
+    width: 58px;
+    height: 91px;
   }
 }
 
 @media (max-width: 360px) {
-  .title {
-    font-size: 36px;
-    line-height: 37px;
+  .slide-menu__title {
+    font-size: 38px;
+    line-height: 41px;
   }
 
-  .subtitle {
+  .slide-menu__subtitle {
     font-size: 10px;
     width: 90%;
   }
@@ -306,11 +426,22 @@ body {
   }
 
   .list-level__item {
-    font-size: 39px;
-    margin-bottom: 9px;
+    font-size: 36px;
   }
 
-  .start-btn {
-    padding: 29px 38px;
+  .flip-card {
+    width: 78px;
+    height: 121px;
+  }
+}
+
+@media (max-width: 320px) {
+  .slide_hard {
+    width: 82%;
+  }
+
+  .slide_hard .flip-card {
+    width: 44px;
+    height: 69px;
   }
 }

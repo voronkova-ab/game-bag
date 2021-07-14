@@ -1,8 +1,8 @@
-const slideMenu = document.querySelector('.slide_menu');
+const slideMenu = document.querySelector('.slide-menu');
 const slide = document.querySelectorAll('.slide')[1];
 const container = document.querySelector('.container');
 const btnStart = document.querySelector('.start-btn');
-const rectangleAll = document.querySelectorAll('.rectangle');
+const rectangleAll = document.querySelectorAll('.list-level__rectangle');
 const radio = document.querySelectorAll('.list-level__radio');
 let cards;
 
@@ -13,25 +13,9 @@ function assignHendlerRadio() {
 assignHendlerRadio();
 
 function showRectangle(event) {
+  rectangleAll.forEach(item => item.style.opacity = '0');
   const rectangleActive = event.target.nextElementSibling.firstElementChild;
   rectangleActive.style.opacity = '1';
-
-  switch (event.target.value) {
-    case 'easy':
-      rectangleAll[1].style.opacity = '0';
-      rectangleAll[2].style.opacity = '0';
-      break;
-    case 'middle':
-      rectangleAll[0].style.opacity = '0';
-      rectangleAll[2].style.opacity = '0';
-      break;
-    case 'hard':
-      rectangleAll[0].style.opacity = '0';
-      rectangleAll[1].style.opacity = '0';
-      break;
-    default:
-      console.log('Ошибка');
-  }
 }
 
 btnStart.addEventListener('click', () => {
