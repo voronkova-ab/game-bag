@@ -169,7 +169,7 @@ body {
 }
 
 .flip-card.flip {
-  transform: rotateY(180deg);
+  transform: rotateY(-180deg);
 }
 
 .flip-card__face,
@@ -184,6 +184,7 @@ body {
 .flip-card__back {
   transform: rotateY(180deg);
 }
+
 
 @media (max-height: 950px) {
   .menu-card_one {
